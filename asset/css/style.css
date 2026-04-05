@@ -1,0 +1,429 @@
+@import url(common.css);
+
+/* 헤더 영역 시작 */
+
+.header {
+    position: sticky;
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+}
+
+.hd-wrap {
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.gnb {
+    gap: 75px;
+    place-items: center;
+}
+
+.header button {
+    border-radius: 10px;
+    background-color: #05D182;
+    padding: 10px 20px;
+}
+
+/* kv 영역 시작 */
+.kv {
+    width: 100%;
+    height: 750px;
+    background-color: #000;
+    position: relative;
+}
+
+.kv-wrap {
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.bgtext-left {
+    font-size: 180px;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.bgtext-right {
+    font-size: 180px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: rgba(255, 255, 255, 0.2);
+    text-align: right;
+    line-height: 100%;
+}
+
+
+.kv-btn {
+    width: 508px;
+    height: 508px;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: 0 0 20px 0px #05D182CC;
+    border: 1px solid #05D182;
+    flex-shrink: 0;
+    z-index: 3;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kv-btn p {
+    margin-right: 20px;
+}
+
+/* 어바웃 영역 시작 */
+.about {
+    font-family: 'Paperozi';
+    width: 100%;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+
+.about-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tit-btn {
+    margin-bottom: 60px;
+}
+
+.tit-btn h3 {
+    margin-bottom: 36px;
+}
+
+.rev-btn {
+    font-size: 24px;
+    background-color: #05D182;
+    font-family: 'Paperozi';
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    padding: 17px 58px;
+}
+
+.infowrap{
+    width: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.infowrap div{
+    width: 100%;
+    display: flex;
+    word-break: keep-all;
+    padding: 0 20px;
+    gap: 168px;
+    place-items: center;
+}
+
+.infowrap h4{
+    font-size: 24px;
+    color: #05D182;
+}
+
+.infowrap p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+
+/* 후기 영역 */
+.section-reviews {
+    width: 100%;
+    height: 984px;
+    background: linear-gradient(#05D182 70%, #8CFFD2 100%);
+    overflow: hidden;
+}
+
+.tit-wrap {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.tit-wrap h1 {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    text-align: center;
+}
+
+.tit-wrap:first-child {
+    margin-top: 100px;
+}
+
+.big-w-circle {
+    position: relative;
+}
+
+.big-w-circle::after {
+    content: "";
+    /* 원의 크기, 모양 지정 */
+    display: block;
+    width: 857px;
+    height: 857px;
+    border-radius: 50%;
+    /* 색상 지정 */
+    background-color: #fff;
+    /* 원의 위치 정렬 */
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    /* z 좌표 정리 */
+    z-index: 0;
+}
+
+.tit {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.revboxwrap {
+    width: 1280px;
+    margin: 100px auto 0;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.leftbox {
+    flex-direction: column;
+    gap: 100px;
+    text-align: right;
+}
+
+.rightbox {
+    flex-direction: column;
+    margin: auto 0;
+    gap: 100px;
+    position: relative;
+    text-align: left;
+}
+
+.rev-textbox {
+    backdrop-filter: blur(10px);
+    font-family: 'Paperozi';
+    font-size: 16px;
+    padding: 20px 60px;
+    width: 524px;
+    background: #ffffff33;
+    border-radius: 20px;
+    border: 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.brief {
+    font-weight: 700;
+    color: #000;
+}
+
+.name {
+    font-weight: 400;
+    color: #006E44;
+}
+
+.rev-textbox p {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #006E44;
+}
+
+.revbox1::after {
+    content: url(../images/face01.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.revbox2::after {
+    content: url(../images/face02.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.revbox3::after {
+    content: url(../images/face03.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.revbox4::after {
+    content: url(../images/face04.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.revbox5::after {
+    content: url(../images/face05.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/* 협력기업 영역 */
+.sec-corp {
+    padding: 100px 0;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Paperozi';
+    color: #fff;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.sec-corp::after {
+    content: "";
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background: radial-gradient(#ffffffcc 0%, #000 50%);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.corp_textwrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.text1 {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.text2 {
+    font-size: 96px;
+    font-weight: 700;
+    letter-spacing: 10%;
+    background: linear-gradient(0deg, #FDDC8F, #F4AB47);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text2::before {
+    content: url(../images/left.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-120%, 10%);
+}
+
+.text2::after {
+    content: url(../images/right.png);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(120%, 10%);
+}
+
+.corp_textwrap h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.text3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.corpwrap {
+    width: 1280px;
+    height: 400px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    margin-top: 50px;
+}
+
+.corpbox {
+    width: 19%;
+    height: 22%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 15px;
+}
+
+.corpbox img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-line {
+    background-color: #3ACE01;
+}
+
+.bg-kakao {
+    background-color: #FFCD00;
+}
+
+.bg-hansam {
+    background-color: #F8F8F8;
+}
+
+.bg-adobe {
+    background-color: #ED1000;
+}
+
+/* 커리큘럼 영역 */
+.sec-curri{
+    width: 100%;
+    height: 1200px;
+    padding: 100px 0;
+}
+
+.curri-titwrap{
+    font-family: 'Paperozi';
+    text-align: center;
+}
+.curri-titwrap h1{
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
