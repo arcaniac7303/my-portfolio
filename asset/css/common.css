@@ -285,17 +285,3 @@
     width: 1280px;
     margin: 0 auto;
 }
-
-.taleft{
-    text-align: left;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.taright{
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}

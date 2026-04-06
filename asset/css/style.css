@@ -35,29 +35,42 @@
 /* kv 영역 시작 */
 .kv {
     width: 100%;
-    height: 750px;
+    height: auto;
     background-color: #000;
     position: relative;
 }
 
 .kv-wrap {
     max-width: 1280px;
-    height: 100%;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: auto;
     position: relative;
     overflow: hidden;
 }
 
+.kv-wrap span {
+    font-size: 130px;
+}
 
 .bgtext {
     font-size: 150px;
-    color: rgba(255, 255, 255, 0.2);
-    line-height: 100%;
 }
 
-.bgtext span{
-    font-size: 130px;
+.bgt-left {
+    color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin-bottom: -10%;
+}
+
+.bgt-right {
+    color: rgba(255, 255, 255, 0.2);
+    line-height: 115%;
+    text-align: right;
+    position: relative;
+    margin-top: -15%;
 }
 
 .kv-btn {
@@ -67,86 +80,131 @@
     background-color: #000;
     box-shadow: 0 0 20px 0px #05D182CC;
     border: 1px solid #05D182;
-    flex-shrink: 0;
-    z-index: 3;
-    place-items: center;
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    flex-shrink: 0;
+    z-index: 1;
+    place-items: center;
 }
 
-.kv-btn p {
-    margin-right: 20px;
+.kv-btn img {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
 }
-@media(max-width:1200px){
-    .bgtext{
+
+@media(max-width:1200px) {
+    .bgtext {
         font-size: 130px;
     }
-    .bgtext span{
+
+    .bgtext span {
         font-size: 110px;
     }
-    .kv-btn{
-        width: 490px;
-        height: 490px;
-    }
-    .kv-btn h1{
-        font-size: 62px;
-    }
-    .kv-btn p{
-        font-size: 46px;
-    }
-}
-@media(max-width:1024px){
-    .bgtext{
-        font-size: 110px;
-    }
-    .bgtext span{
-        font-size: 90px;
-    }
-    .kv-btn{
+
+    .kv-btn {
         width: 460px;
         height: 460px;
     }
-    .kv-btn h1{
-        font-size: 59px;
-    }
-    .kv-btn p{
-        font-size: 44px;
-    }
-}
-@media(max-width:768px){
-    .bgtext{
-        font-size: 100px;
-    }
-    .bgtext span{
-        font-size: 80px;
-    }
-    .kv-btn h1{
-        font-size: 56px;
-    }
-    .kv-btn p{
-        font-size: 42px;
-    }
-}
-@media(max-width:480px){
-    .kv-btn{
-        width: 480px;
-        height: 480px;
-    }
-    .bgtext{
-        font-size: 90px;
-    }
-    .bgtext span{
-        font-size: 70px;
-    }
-    .kv-btn h1{
+
+    .kv-btn h1 {
         font-size: 54px;
     }
-    .kv-btn p{
-        font-size: 40px;
+
+    .kv-btn p {
+        font-size: 42px;
+    }
+
+    .kv-btn img {
+        width: 28px;
+        margin-left: 19px;
     }
 }
+
+@media(max-width:1024px) {
+    .bgtext {
+        font-size: 110px;
+    }
+
+    .bgtext span {
+        font-size: 90px;
+    }
+
+    .kv-btn {
+        width: 440px;
+        height: 440px;
+    }
+
+    .kv-btn h1 {
+        font-size: 48px;
+    }
+
+    .kv-btn p {
+        font-size: 36px;
+    }
+
+    .kv-btn img {
+        width: 26px;
+        margin-left: 18px;
+    }
+}
+
+@media(max-width:768px) {
+    .bgtext {
+        font-size: 100px;
+    }
+
+    .bgtext span {
+        font-size: 80px;
+    }
+
+    .kv-btn {
+        width: 420px;
+        height: 420px;
+    }
+    .kv-btn h1 {
+        font-size: 44px;
+    }
+
+    .kv-btn p {
+        font-size: 34px;
+    }
+
+    .kv-btn img {
+        width: 24px;
+        margin-left: 17px;
+    }
+}
+
+@media(max-width:480px) {
+    .kv-btn {
+        width: 400px;
+        height: 400px;
+    }
+
+    .bgtext {
+        font-size: 90px;
+    }
+
+    .bgtext span {
+        font-size: 70px;
+    }
+
+    .kv-btn h1 {
+        font-size: 40px;
+    }
+
+    .kv-btn p {
+        font-size: 30px;
+    }
+
+    .kv-btn img {
+        width: 22px;
+        margin-left: 16px;
+    }
+}
+
 /* 어바웃 영역 시작 */
 .about {
     font-family: 'Paperozi';
@@ -180,14 +238,14 @@
     padding: 17px 58px;
 }
 
-.infowrap{
+.infowrap {
     width: 740px;
     display: flex;
     flex-direction: column;
     gap: 46px;
 }
 
-.infowrap div{
+.infowrap div {
     width: 100%;
     display: flex;
     word-break: keep-all;
@@ -196,7 +254,7 @@
     place-items: center;
 }
 
-.infowrap h4{
+.infowrap h4 {
     font-size: 24px;
     color: #05D182;
 }
@@ -473,28 +531,29 @@
 }
 
 /* 커리큘럼 영역 */
-.sec-curri{
+.sec-curri {
     width: 100%;
     height: 1200px;
     padding: 100px 0;
     z-index: -1;
 }
 
-.curri-titwrap{
+.curri-titwrap {
     font-family: 'Paperozi';
     text-align: center;
     height: 200px;
 }
-.curri-titwrap h1{
+
+.curri-titwrap h1 {
     line-height: 120%;
     margin-bottom: 16px;
 }
 
-.linebox{
+.linebox {
     max-width: 1280px;
 }
 
-.stepswrap{
+.stepswrap {
     width: 944px;
     height: 58px;
     gap: 20px;
@@ -505,21 +564,20 @@
     align-items: center;
 }
 
-.stepswrap p{
+.stepswrap p {
     width: 20%;
     height: 100%;
     border: 1px solid #05D182;
     border-radius: 29px;
     align-content: center;
     position: relative;
-    
+
 }
 
-.stepswrap p::after{
+.stepswrap p::after {
     content: url(../images/textboxtail.png);
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%,110%);
+    transform: translate(-50%, 110%);
 }
-
