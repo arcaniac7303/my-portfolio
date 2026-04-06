@@ -60,6 +60,7 @@
     font-weight: 900;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
@@ -124,127 +125,177 @@
 }
 
 /* 글자체 */
-.paper{
+.paper {
     font-family: 'Paperozi';
 }
-.pre{
+
+.pre {
     font-family: 'Pretendard';
 }
 
 
 /* 글자 크기 */
-.fsz150{
+.fsz150 {
     font-size: 150px;
 }
-.fsz120{
+
+.fsz120 {
     font-size: 120px;
 }
-.fsz64{
+
+.fsz64 {
     font-size: 64px;
 }
-.fsz48{
+
+.fsz48 {
     font-size: 48px;
 }
-.fsz32{
+
+.fsz32 {
     font-size: 32px;
 }
-.fsz24{
+
+.fsz24 {
     font-size: 24px;
 }
-.fsz20{
+
+.fsz20 {
     font-size: 20px;
 }
-.fsz16{
+
+.fsz16 {
     font-size: 16px;
 }
-.fsz14{
+
+.fsz14 {
     font-size: 14px;
 }
 
 
 /* 글자 두께 */
-.xthin{
+.xthin {
     font-weight: 100;
 }
-.thin{
+
+.thin {
     font-weight: 200;
 }
-.light{
+
+.light {
     font-weight: 300;
 }
-.regular{
+
+.regular {
     font-weight: 400;
 }
-.medium{
+
+.medium {
     font-weight: 500;
 }
-.semibold{
+
+.semibold {
     font-weight: 600;
 }
-.bold{
+
+.bold {
     font-weight: 700;
 }
-.xbold{
+
+.xbold {
     font-weight: 800;
 }
-.black{
+
+.black {
     font-weight: 900;
 }
 
 /* 글자 색상 지정 */
-.main1{
+.main1 {
     color: #05D182;
 }
-.main2{
+
+.main2 {
     color: #006E44;
 }
-.main3{
+
+.main3 {
     color: #001D0D;
 }
-.sub1{
+
+.sub1 {
     color: #fff;
 }
-.sub2{
+
+.sub2 {
     color: #F2F4F8;
 }
-.sub3{
+
+.sub3 {
     color: #7C7B7B;
 }
-.sub4{
+
+.sub4 {
     color: #000;
 }
 
 /* 배경색 지정 */
-.bg-main1{
+.bg-main1 {
     background-color: #05D182;
 }
-.bg-main2{
+
+.bg-main2 {
     background-color: #006E44
 }
-.bg-main3{
+
+.bg-main3 {
     background-color: #001D0D;
 }
-.bg-sub1{
+
+.bg-sub1 {
     background-color: #fff;
 }
-.bg-sub2{
+
+.bg-sub2 {
     background-color: #F2F4F8;
 }
-.bg-sub3{
+
+.bg-sub3 {
     background-color: #7C7B7B;
 }
-.bg-sub4{
+
+.bg-sub4 {
     background-color: #000;
 }
 
 /* 정렬 */
-.df{
+.df {
     display: flex;
 }
-.df-c{
+
+.df-c {
     display: flex;
     flex-direction: column;
 }
-.pos-r{
+
+.pos-r {
     position: relative;
+}
+
+.grid {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.taleft{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.taright{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
