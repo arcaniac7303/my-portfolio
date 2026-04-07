@@ -135,42 +135,24 @@
 
 
 /* 글자 크기 */
-.fsz150 {
-    font-size: 150px;
+.h1{
+    font-size: 4rem;
 }
-
-.fsz120 {
-    font-size: 120px;
+.h2{
+    font-size: 3rem;
 }
-
-.fsz64 {
-    font-size: 64px;
+.h3{
+    font-size: 2rem;
 }
-
-.fsz48 {
-    font-size: 48px;
+.h4{
+    font-size: 1.5rem;
 }
-
-.fsz32 {
-    font-size: 32px;
+.body1{
+    font-size: 1rem;
 }
-
-.fsz24 {
-    font-size: 24px;
+.body2{
+    font-size: 0.625rem;
 }
-
-.fsz20 {
-    font-size: 20px;
-}
-
-.fsz16 {
-    font-size: 16px;
-}
-
-.fsz14 {
-    font-size: 14px;
-}
-
 
 /* 글자 두께 */
 .xthin {
@@ -270,15 +252,6 @@
 /* 정렬 */
 .df {
     display: flex;
-}
-
-.df-c {
-    display: flex;
-    flex-direction: column;
-}
-
-.pos-r {
-    position: relative;
 }
 
 .grid {
