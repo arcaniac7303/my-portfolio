@@ -373,12 +373,12 @@ html {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 16px;
-    margin-top: 50px;
+    row-gap: 1rem;
+    margin-top: 3.125rem;
 }
 
 .corpbox {
-    width: 19%;
+    width: 18%;
     height: 5.5rem;
     background-color: #fff;
     position: relative;
@@ -388,6 +388,10 @@ html {
 
 .corpbox img {
     position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    width: fit-content;
+    height: fit-content;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -428,46 +432,100 @@ html {
 .curri-titwrap {
     font-family: 'Paperozi';
     text-align: center;
-    height: 200px;
+    height: auto;
 }
 
 .curri-titwrap h1 {
     line-height: 120%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
-
-.linebox {
+.subsec1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+.line {
     max-width: 1280px;
+    /* transform: rotate(90deg); */
 }
 
-.stepswrap {
-    width: 944px;
-    height: 58px;
-    gap: 20px;
-    margin: 0 auto 50px;
+.sec-curri .highwrap {
+    width: 59rem;
+    height: 3rem;
+    gap: 1%;
+    margin: 6.25rem auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    position: relative;
 }
 
-.stepswrap p {
+.sec-curri .highwrap p {
     width: 20%;
     height: 100%;
     border: 1px solid #05D182;
-    border-radius: 29px;
+    border-radius: 1.8125rem;
     align-content: center;
     position: relative;
-
 }
 
-.stepswrap p::after {
-    content: url(../images/textboxtail.png);
+.highwrap p::after {
+    content: "";
+    width: auto;
+    height: auto;
+    border-width: 1rem 1rem 0 1rem;
+    border-style: solid;
+    border-color: #05D182 transparent transparent transparent;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 110%);
+    transform: translate(-50%, 100%);
 }
+
+.lowwrap {
+    width: 59rem;
+    margin: 0 auto;
+    gap: 1%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lowbox {
+    width: 20%;
+    align-items: center;
+    align-content: center;
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4375rem;
+    border-radius: 29rem;
+    background-color: #05D182;
+    word-break: keep-all;
+}
+
+.lowbox .num{
+    position: relative;
+    z-index: 999;
+}
+
+.lowbox .num::after{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #004629;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+
+
 
 
 @media(max-width:1296px) {
