@@ -440,7 +440,7 @@ html {
     line-height: 120%;
     margin-bottom: 1rem;
 }
-
+/* 커리큘럼 서브 섹션 1 시작 */
 .subsec1 {
     width: 100%;
     max-width: 1024px;
@@ -575,44 +575,32 @@ html {
     background-clip: text;
     color: transparent;
 }
-
+/* 커리큘럼 영역 서브 섹션 2 시작 */
 .sebsuc2 {
     width: 100%;
     height: auto;
-    align-items: center;
-    place-items: center;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
 }
 
-.subsec2-tit {
-    display: flex;
+.subsec2-tit{
+    width: 100%;
+    text-align: center;
     color: #FFA828;
     position: relative;
-    justify-content: space-between;
-    z-index: 10;
-    margin-bottom: 7rem;
+    margin: 0 auto 6.25rem;
+    
 }
-
-.subsec2-tit::before {
+.subsec2-tit h4{
+    line-height: 1;
+}
+.subsec2-tit h4::after{
     content: "";
-    background-color: #FFA828;
-    width: 30%;
-    height: 1px;
-    align-self: center;
-}
-
-.subsec2-tit::after {
-    content: "";
-    background-color: #FFA828;
-    width: 30%;
-    height: 1px;
-    align-self: center;
-}
-
-.subsec2-tit h4 {
-    gap: 0.625rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../images/trophy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -0.1875rem;
 }
 
 .subsec2-cont {
@@ -699,29 +687,61 @@ html {
 
 .leftwrap p:first-child {
     position: relative;
-    /* transform: translate(-100%,-20%); */
+    top: 0;
+    left: -80%;
+    transform: translate(-50%,0);
 }
 
 .leftwrap p:nth-child(2) {
     position: relative;
-    /* transform: translate(120%,-10%); */
+    top: 0;
+    left: 130%;
+    transform: translate(-50%,-150%);
 }
 
 .leftwrap p:nth-child(4) {
     position: relative;
-    /* transform: translate(125%,25%); */
+    top: 0;
+    left: 160%;
+    transform: translate(-50%,0);
 }
 
 .leftwrap p:nth-child(5) {
     position: relative;
-    /* transform: translate(-110%,20%); */
+    top: 0;
+    left: -100%;
+    transform: translate(-50%,0);
 }
 
 .leftwrap p:nth-child(6) {
     position: relative;
-    /* transform: translate(0,70%);  */
+    transform: translate(0,65%); 
 }
 
+.leftwrap p:first-child::before{
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #006E44;
+    position: absolute;
+    top: -150%;
+    right: -100%;
+    transform: translate(50%,-50%);
+}
+.leftwrap p:nth-child(6)::before{
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: #006E44;
+    position: absolute;
+    top: 0;
+    right: -130%;
+    transform: translate(50%,-50%);
+}
 .leftwrap p:first-child::after {
     content: "";
     display: block;
@@ -813,9 +833,18 @@ html {
     gap: 0.25rem;
 }
 
-.rightwrap img {
-    /* transform: translate(0, 10%); */
-    position: relative;
+.rightwrap p::before{
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/badge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
     z-index: 10;
 }
 
@@ -919,14 +948,8 @@ html {
 
     .highwrap,
     .lowwrap {
-        
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    .highwrap p {
-        width: 10.125rem;
-        height: 10.125rem;
     }
 
     .lowbox {
@@ -952,7 +975,11 @@ html {
         border-width: 0.625rem 0 0.625rem 0.625rem;
         border-color: transparent transparent transparent #006E44;
     }
-
+    .mut-arrow{
+        align-content: center;
+        height: 6rem;
+        transform: rotate(90deg);
+    }
     .lowbox::before {
         top: 50%;
         left: 0;
@@ -962,7 +989,7 @@ html {
     .subsec2-cont{
         flex-direction: column;
         align-items: center;
-        
+        height: 50rem;
     }
 }
 
