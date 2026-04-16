@@ -272,3 +272,8 @@ h5{
 .nowrap{
     white-space: nowrap;
 }
+
+/* 활성화 */
+.active{
+    display: block;
+}
