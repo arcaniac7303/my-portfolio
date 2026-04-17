@@ -363,7 +363,7 @@
             </div>
         </div>
     </section> -->
-    <section class="faq pre main2">
+    <!-- <section class="faq pre main2">
         <div class="faq-titwrap">
             <h3 class="h3">FAQ</h3>
             <h1 class="h1">자주 묻는 질문</h1>
@@ -389,7 +389,51 @@
                     *단위기간: 개강일을 기점으로 한 매 한달 단위의 기간</p>
             </div>
         </div>
+    </section> -->
+
+    <!-- form 영역 시작-->
+    <section class="apply-section">
+        <h2 class="section-title h2 bold paper main1">상담 신청하기</h2>
+        <form action="" method="post">
+
+            <div class="form-group-list">
+
+                <div class="form-item">
+                    <label for="userName">이름</label>
+                    <input type="text" id="userName" name="userName" placeholder="이름을 입력해주세요.">
+                </div>
+
+                <div class="form-item">
+                    <label for="userPhone">휴대폰 번호</label><input type="text" id="userPhone" name="userPhone">
+                </div>
+
+                <div class="form-item">
+                    <label for="userEmail">이메일 주소</label><input type="text" id="userEmail" name="userEmail">
+                </div>
+
+                <div class="form-item">
+                    <label for="employmentStatus">근무 현황</label>
+                    <select name="employmentStatus" id="employmentStatus">
+                        <option value="working">재직중</option>
+                        <option value="layoff">실업</option>
+                        <option value="notWorking">무직</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="camp-gen">기수 선택</label><select id="camp-gen" name="campGeneration">
+                        <option value="30">30기</option>
+                        <option value="31">31기</option>
+
+                    </select>
+                </div>
+
+            </div>
+        </form>
     </section>
+
+
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

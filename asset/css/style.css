@@ -1167,6 +1167,7 @@ html {
     background-size: contain;
     flex-shrink: 0;
 }
+/* form */
 
 @media(max-width:1296px) {
     html {
