@@ -399,21 +399,31 @@
             <div class="form-group-list">
 
                 <div class="form-item">
-                    <label for="userName">이름</label>
-                    <input type="text" id="userName" name="userName" placeholder="이름을 입력해주세요.">
+                    <label for="userName" class="pre main1 bold h4">이름</label>
+                    <input class="form-input-box--default" type="text" id="userName" name="userName"
+                        placeholder="이름을 입력해주세요.">
                 </div>
 
                 <div class="form-item">
-                    <label for="userPhone">휴대폰 번호</label><input type="text" id="userPhone" name="userPhone">
+                    <label for="userPhone" class="pre main1 bold h4">휴대폰 번호</label>
+                    <input class="form-input-box--default" type="text" id="userPhone" name="userPhone"
+                        placeholder="전화번호를 입력해주세요.">
+                </div>
+
+                <div class="form-item item-3col--full">
+                    <label for="userEmail" class="pre main1 bold h4">이메일 주소</label>
+                    <input class="form-input-box--default" type="text" id="userEmail" name="userEmail"
+                        placeholder="이메일을 입력해주세요.">
+                    <select class="form-input-box--default select--default" name="emailSite" id="email-site">
+                        <option value="naver">@naver.com</option>
+                        <option value="daum">@daum.com</option>
+                        <option value="gmail">@gmail.com</option>
+                    </select>
                 </div>
 
                 <div class="form-item">
-                    <label for="userEmail">이메일 주소</label><input type="text" id="userEmail" name="userEmail">
-                </div>
-
-                <div class="form-item">
-                    <label for="employmentStatus">근무 현황</label>
-                    <select name="employmentStatus" id="employmentStatus">
+                    <label for="employmentStatus" class="pre main1 bold h4">근무 현황</label>
+                    <select class="form-input-box--default select--default" name="employmentStatus" id="employmentStatus">
                         <option value="working">재직중</option>
                         <option value="layoff">실업</option>
                         <option value="notWorking">무직</option>
@@ -421,17 +431,27 @@
                 </div>
 
                 <div class="form-item">
-                    <label for="camp-gen">기수 선택</label><select id="camp-gen" name="campGeneration">
+                    <label for="camp-gen" class="pre main1 bold h4">기수 선택</label>
+                    <select class="form-input-box--default select--default" id="camp-gen" name="campGeneration">
                         <option value="30">30기</option>
                         <option value="31">31기</option>
 
                     </select>
                 </div>
 
+                <div class="form-item item-2col--full">
+                    <label for="inquiry" class="pre main1 bold h4">문의사항</label>
+                    <textarea class="form-input-box--default pre body2" name="inquiry" id="inquiry"
+                        placeholder="자유롭게 작성해주세요."></textarea>
+                </div>
+                <button class="form-section-submit-btn paper h4 bold sub1">캠프 지원하기</button>
             </div>
         </form>
     </section>
 
+    <section class="footer">
+
+    </section>
 
 
 
