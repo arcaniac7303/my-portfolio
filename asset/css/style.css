@@ -1167,16 +1167,19 @@ html {
     background-size: contain;
     flex-shrink: 0;
 }
+
 /* form */
-.apply-section{
+.apply-section {
     max-width: 1280px;
     margin: 0 auto;
     padding: 6.25rem 0;
 }
-.section-title{
+
+.section-title {
     margin-bottom: 1.875rem;
 }
-.form-group-list{
+
+.form-group-list {
     width: 100%;
     height: auto;
     display: grid;
@@ -1184,7 +1187,8 @@ html {
     column-gap: 1rem;
     row-gap: 3.125rem;
 }
-.form-item{
+
+.form-item {
     width: 100%;
     height: 4.25rem;
     display: grid;
@@ -1192,27 +1196,32 @@ html {
     text-align: start;
     align-content: center;
 }
-.item-3col--full{
+
+.item-3col--full {
     grid-column: span 2;
     grid-template-columns: 1fr 3fr 2fr;
 }
-.item-2col--full{
+
+.item-2col--full {
     grid-column: span 2;
     grid-template-columns: 1fr 5fr;
 }
-.form-item label{
+
+.form-item label {
     padding: 20px 0;
     margin-right: 1rem;
     border-bottom: 1px solid #05D182;
 }
-.form-input-box--default{
+
+.form-input-box--default {
     height: 68px;
     padding: 0.625rem 1.25rem;
     background-color: #f2f4f8;
     border-radius: 1.25rem;
     color: #7C7B7B;
 }
-.select--default{
+
+.select--default {
     background-image: url(../images/arrow-down-bold.png);
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) center;
@@ -1220,12 +1229,14 @@ html {
     -moz-appearance: none;
     appearance: none;
 }
-.form-item textarea{
+
+.form-item textarea {
     align-self: end;
     resize: none;
     align-content: center;
 }
-.form-section-submit-btn{
+
+.form-section-submit-btn {
     grid-column: span 2;
     width: calc(500%/6);
     margin-left: calc(100%/6);
@@ -1233,6 +1244,34 @@ html {
     background: #05D182;
     border-radius: 0.625rem;
 }
+
+#userEmail {
+    margin-right: 0.625rem;
+}
+
+/* FOOTER SECTION */
+.footer {
+    padding: 3rem 0;
+    background: #05D182;
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-navi {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-business-info {
+    line-height: 140%;
+}
+
 @media(max-width:1296px) {
     html {
         font-size: 14px;
@@ -1240,9 +1279,15 @@ html {
 
     .about,
     .section-reviews,
-    .sec-corp .sec-curri,
-    .faq {
+    .sec-corp,
+    .sec-curri,
+    .faq,
+    .apply-section {
         padding: 6.25rem 4rem;
+    }
+
+    .footer {
+        padding: 3rem 4rem;
     }
 
     .sub-cardwrap {
@@ -1396,19 +1441,21 @@ html {
         max-width: 600px;
     }
 
-    .faq{
+    .faq {
         flex-direction: column;
         row-gap: 2rem;
         padding: 6.25rem 6.25rem;
     }
-    .faq-cardwrap{
+
+    .faq-cardwrap {
         max-width: 100%;
     }
 }
 
 
 
-@media(max-width:768px) {
+
+@media(max-width:783px) {
     html {
         font-size: 13px;
     }
@@ -1429,10 +1476,23 @@ html {
         gap: 4rem;
     }
 
-    .faq{
+    .faq {
         padding: 6.25rem 4rem;
     }
+
+    .form-group-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-3col--full{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item-2col--full{
+        grid-template-columns: 1fr 2fr;
+    }
 }
+
 
 @media(max-width:540px) {
     html {
@@ -1447,63 +1507,63 @@ html {
         margin-top: -5rem;
     }
 
-    .faq{
+    .faq {
         padding: 6.25rem 2rem;
     }
 }
 
-@media(max-width:458px) {
-    html {
-        font-size: 11px;
+    @media(max-width:458px) {
+        html {
+            font-size: 11px;
+        }
+
+        .bgt-left,
+        .bgt-right {
+            font-size: 7rem;
+        }
+
+        .bgt-right {
+            line-height: 110%;
+        }
+
+        .kv-wrap span {
+            font-size: 6rem;
+        }
+
+        .body1 {
+            font-size: 1.25rem;
+        }
+
+        .body2 {
+            font-size: 1rem;
+        }
     }
 
-    .bgt-left,
-    .bgt-right {
-        font-size: 7rem;
-    }
+    @media(max-width:426px) {
+        html {
+            font-size: 11px;
+        }
 
-    .bgt-right {
-        line-height: 110%;
-    }
+        .h1 {
+            font-size: 3.5rem;
+        }
 
-    .kv-wrap span {
-        font-size: 6rem;
-    }
+        .h2 {
+            font-size: 2.5rem;
+        }
 
-    .body1 {
-        font-size: 1.25rem;
-    }
+        .kv-btn {
+            width: 30rem;
+            height: 30rem;
+        }
 
-    .body2 {
-        font-size: 1rem;
-    }
-}
+        .revbox br {
+            display: none;
+        }
 
-@media(max-width:426px) {
-    html {
-        font-size: 11px;
+        .revbox {
+            word-break: keep-all;
+            width: 90%;
+            margin: auto;
+        }
     }
-
-    .h1 {
-        font-size: 3.5rem;
-    }
-
-    .h2 {
-        font-size: 2.5rem;
-    }
-
-    .kv-btn {
-        width: 30rem;
-        height: 30rem;
-    }
-
-    .revbox br {
-        display: none;
-    }
-
-    .revbox {
-        word-break: keep-all;
-        width: 90%;
-        margin: auto;
-    }
-}
