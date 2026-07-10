@@ -1,4 +1,5 @@
 /* common.css 호출 */
+@import url(reset.css);
 @import url(common.css);
 
 /* root 설정 */
@@ -6,6 +7,35 @@ html {
     font-size: 16px;
 }
 
+/* 포트폴리오 공지 모달 */
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    line-height: 130%;
+    background: white;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    z-index: 200;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.modal__overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 199;
+}
 /* 헤더 영역 시작 */
 
 .header {
@@ -15,7 +45,7 @@ html {
     width: 100%;
     height: auto;
     padding: 1rem 0;
-    z-index: 999;
+    z-index: 100;
 }
 
 .hd-wrap {
@@ -1475,10 +1505,11 @@ html {
         flex-direction: column;
     }
 
-    .item-3col--full{
+    .item-3col--full {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .item-2col--full{
+
+    .item-2col--full {
         grid-template-columns: 1fr 2fr;
     }
 }
@@ -1502,44 +1533,44 @@ html {
     }
 }
 
-    @media(max-width:458px) {
+@media(max-width:458px) {
 
-        .bgt-left,
-        .bgt-right {
-            font-size: 7rem;
-        }
-
-        .bgt-right {
-            line-height: 110%;
-        }
-
-        .kv-wrap span {
-            font-size: 6rem;
-        }
+    .bgt-left,
+    .bgt-right {
+        font-size: 7rem;
     }
 
-    @media(max-width:426px) {
-
-        .h1 {
-            font-size: 3.5rem;
-        }
-
-        .h2 {
-            font-size: 2.5rem;
-        }
-
-        .kv-btn {
-            width: 30rem;
-            height: 30rem;
-        }
-
-        .revbox br {
-            display: none;
-        }
-
-        .revbox {
-            word-break: keep-all;
-            width: 90%;
-            margin: auto;
-        }
+    .bgt-right {
+        line-height: 110%;
     }
+
+    .kv-wrap span {
+        font-size: 6rem;
+    }
+}
+
+@media(max-width:426px) {
+
+    .h1 {
+        font-size: 3.5rem;
+    }
+
+    .h2 {
+        font-size: 2.5rem;
+    }
+
+    .kv-btn {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .revbox br {
+        display: none;
+    }
+
+    .revbox {
+        word-break: keep-all;
+        width: 90%;
+        margin: auto;
+    }
+}
