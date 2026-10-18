@@ -595,7 +595,6 @@ section.subsidy {
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .faq-card h4 {
@@ -605,9 +604,19 @@ section.subsidy {
     line-height: 130%;
 }
 
-.faq-card p {
-    display: none;
-    line-height: 130%;
+.faq-card>p {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.faq-card.active>p {
+    max-height: 300px;
+    opacity: 1;
+    padding-top: 1rem;
 }
 
 .faq-card h4::after {

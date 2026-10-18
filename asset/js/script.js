@@ -6,5 +6,7 @@ closeBtn.addEventListener('click', () => {
 })
 
 $(function () {
-    
+    $('.faq-card').click(function () {
+        $(this).toggleClass('active');
+    })
 })
