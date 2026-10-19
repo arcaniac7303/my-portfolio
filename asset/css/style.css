@@ -505,7 +505,8 @@ section.subsidy {
             }
 
             .sub-lower {
-                text-wrap: nowrap;
+                text-wrap: wrap;
+                word-break: keep-all;
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
