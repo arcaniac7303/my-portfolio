@@ -126,7 +126,10 @@ html {
     transform: translate(-50%, 2rem);
     flex-shrink: 0;
     z-index: 1;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
