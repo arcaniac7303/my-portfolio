@@ -6,6 +6,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    --header-height: 5rem;
 }
 
 /* 포트폴리오 공지 모달 */
@@ -46,13 +47,16 @@ html {
     top: 0;
     background-color: #fff;
     width: 100%;
-    height: auto;
-    padding: 1rem 0;
+    height: var(--header-height);
+    padding: 0;
     z-index: 100;
+    display: flex;
+    align-items: center;
 }
 
 .hd-wrap {
     max-width: 1280px;
+    width: 100%;
     height: 100%;
     margin: auto;
     justify-content: space-between;
@@ -661,11 +665,18 @@ section.subsidy {
 }
 
 /* form */
+.about,
+.section-reviews,
+.sec-corp,
+.subsidy,
+.apply-section {
+    scroll-margin-top: var(--header-height);
+}
+
 .apply-section {
     max-width: 1280px;
     margin: 0 auto;
     padding: 6.25rem 0;
-    scroll-margin-top: 5rem;
 }
 
 .section-title {
@@ -805,7 +816,7 @@ section.subsidy {
     }
 
     .header {
-        padding: 1rem 16px;
+        padding: 0 16px;
     }
 
     .about-wrap {
