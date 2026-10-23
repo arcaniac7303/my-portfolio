@@ -473,114 +473,110 @@ section.subsidy {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+}
 
-    .sub-titwrap {
-        text-align: center;
-        margin: 0 auto;
-        line-height: normal;
-        padding: 0 1rem;
-        word-break: keep-all;
+section.subsidy .sub-titwrap {
+    text-align: center;
+    margin: 0 auto;
+    line-height: normal;
+    padding: 0 1rem;
+    word-break: keep-all;
+}
 
-        >h1 {
-            margin-bottom: 2.5rem;
-        }
+section.subsidy .sub-titwrap > h1 {
+    margin-bottom: 2.5rem;
+}
 
-        >h5 {
-            margin-bottom: 0.25rem;
-        }
+section.subsidy .sub-titwrap > h5 {
+    margin-bottom: 0.25rem;
+}
 
-        >h4 {
-            margin-bottom: 1.375rem;
+section.subsidy .sub-titwrap > h4 {
+    margin-bottom: 1.375rem;
+}
 
-            >span {
-                display: block;
-            }
-        }
-    }
+section.subsidy .sub-titwrap > h4 > span {
+    display: block;
+}
 
+section.subsidy .sub-cardwrap {
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
 
-    .sub-cardwrap {
-        justify-content: center;
-        align-items: stretch;
-        display: flex;
-        margin: 0 auto;
-        position: relative;
-        gap: 1rem;
-        width: 100%;
-        max-width: 1280px;
-        padding: 0 1rem;
-        box-sizing: border-box;
+section.subsidy .sub-cardwrap .sub-card {
+    min-width: 0;
+    box-sizing: border-box;
+}
 
-        .sub-card {
-            min-width: 0;
-            box-sizing: border-box;
-        }
+section.subsidy .sub-cardwrap .sub-leftcard {
+    flex: 1 1 0;
+    max-width: 32rem;
+    padding: 2.9375rem;
+    background: #05D18214;
+    border-radius: 1.875rem;
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
 
-        .sub-leftcard {
-            flex: 1 1 0;
-            max-width: 32rem;
-            padding: 2.9375rem;
-            background: #05D18214;
-            border-radius: 1.875rem;
-            gap: 1.25rem;
-            display: flex;
-            flex-direction: column;
+section.subsidy .sub-cardwrap .sub-leftcard .sub-upper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
-            .sub-upper {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-            }
+section.subsidy .sub-cardwrap .sub-leftcard .sub-lower {
+    text-wrap: wrap;
+    word-break: keep-all;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-            .sub-lower {
-                text-wrap: wrap;
-                word-break: keep-all;
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
+section.subsidy .sub-cardwrap .sub-mid > img {
+    transform: rotate(90deg);
+    max-width: 100%;
+    height: auto;
+}
 
-        }
+section.subsidy .sub-cardwrap .sub-plus {
+    align-self: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: auto;
+    z-index: 10;
+}
 
-        .sub-mid {
-            >img {
-                transform: rotate(90deg);
-                max-width: 100%;
-                height: auto;
-            }
-        }
+section.subsidy .sub-cardwrap .sub-rightcard {
+    flex: 0.75 1 0;
+    max-width: 24rem;
+    background: #006E4414;
+    border-radius: 1.875rem;
+    padding: 2.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    word-break: keep-all;
+}
 
-        .sub-plus {
-            align-self: center;
-            flex-shrink: 0;
-            width: 2.5rem;
-            height: auto;
-            z-index: 10;
-        }
+section.subsidy .sub-cardwrap .sub-rightcard > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
 
-        .sub-rightcard {
-            flex: 0.75 1 0;
-            max-width: 24rem;
-            background: #006E4414;
-            border-radius: 1.875rem;
-            padding: 2.9375rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 2rem;
-            word-break: keep-all;
-
-            >div {
-                display: flex;
-                flex-direction: column;
-                gap: 0.625rem;
-
-                >h3 {
-                    line-height: 140%;
-                }
-            }
-        }
-    }
+section.subsidy .sub-cardwrap .sub-rightcard > div > h3 {
+    line-height: 140%;
 }
 
 /* sec.faq */
@@ -967,28 +963,26 @@ section.subsidy {
         padding: 6.25rem 4rem;
     }
 
-    section.subsidy {
-        .sub-cardwrap {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 1.5rem;
+    section.subsidy .sub-cardwrap {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
 
-            .sub-leftcard,
-            .sub-rightcard {
-                width: 100%;
-                max-width: none;
-                flex: 1 1 auto;
-                padding: 2rem;
-            }
+    section.subsidy .sub-cardwrap .sub-leftcard,
+    section.subsidy .sub-cardwrap .sub-rightcard {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+        padding: 2rem;
+    }
 
-            .sub-plus {
-                width: 2rem;
-            }
+    section.subsidy .sub-cardwrap .sub-plus {
+        width: 2rem;
+    }
 
-            .sub-rightcard {
-                gap: 1.25rem;
-            }
-        }
+    section.subsidy .sub-cardwrap .sub-rightcard {
+        gap: 1.25rem;
     }
 }
 
