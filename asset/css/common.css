@@ -212,62 +212,94 @@ h5 {
     font-weight: 900;
 }
 
+/* 디자인 토큰 */
+:root {
+    --header-height: 5rem;
+
+    --color-primary: #05D182;
+    --color-primary-dark: #006E44;
+    --color-primary-darker: #001D0D;
+    --color-primary-soft: #8CFFD2;
+    --color-primary-mint: #B9F6DA;
+    --color-primary-muted: #A2EDD0;
+    --color-primary-alpha: #05D18214;
+    --color-primary-dark-alpha: #006E4414;
+    --color-primary-glow: #05D182CC;
+
+    --color-white: #fff;
+    --color-white-alpha: #ffffff33;
+    --color-white-soft: #ffffffcc;
+
+    --color-gray-light: #F2F4F8;
+    --color-gray: #7C7B7B;
+    --color-gray-soft: #F8F8F8;
+
+    --color-black: #000;
+
+    --color-accent-gold: #FDDC8F;
+    --color-accent-gold-dark: #F4AB47;
+
+    --color-brand-line: #06C755;
+    --color-brand-kakao: #FFCD00;
+    --color-brand-adobe: #ED1000;
+}
+
 /* 글자 색상 지정 */
-.main1 {
-    color: #05D182;
+.text-primary {
+    color: var(--color-primary);
 }
 
-.main2 {
-    color: #006E44;
+.text-primary-dark {
+    color: var(--color-primary-dark);
 }
 
-.main3 {
-    color: #001D0D;
+.text-primary-darker {
+    color: var(--color-primary-darker);
 }
 
-.sub1 {
-    color: #fff;
+.text-white {
+    color: var(--color-white);
 }
 
-.sub2 {
-    color: #F2F4F8;
+.text-gray-light {
+    color: var(--color-gray-light);
 }
 
-.sub3 {
-    color: #7C7B7B;
+.text-gray {
+    color: var(--color-gray);
 }
 
-.sub4 {
-    color: #000;
+.text-black {
+    color: var(--color-black);
 }
 
 /* 배경색 지정 */
-.bg-main1 {
-    background-color: #05D182;
+.bg-primary {
+    background-color: var(--color-primary);
 }
 
-.bg-main2 {
-    background-color: #006E44
+.bg-primary-dark {
+    background-color: var(--color-primary-dark);
 }
 
-.bg-main3 {
-    background-color: #001D0D;
+.bg-primary-darker {
+    background-color: var(--color-primary-darker);
 }
 
-.bg-sub1 {
-    background-color: #fff;
+.bg-white {
+    background-color: var(--color-white);
 }
 
-.bg-sub2 {
-    background-color: #F2F4F8;
+.bg-gray-light {
+    background-color: var(--color-gray-light);
 }
 
-.bg-sub3 {
-    background-color: #7C7B7B;
+.bg-gray {
+    background-color: var(--color-gray);
 }
 
-.bg-sub4 {
-    background-color: #000;
+.bg-black {
+    background-color: var(--color-black);
 }
 
 /* 정렬 */
